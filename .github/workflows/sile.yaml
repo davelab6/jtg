@@ -9,4 +9,4 @@ jobs:
       - name: Render document with SILE
         uses: sile-typesetter/sile@v0
         with:
-          args: underground-history.sile
+          args: build.sh
