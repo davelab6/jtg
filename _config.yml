@@ -4,5 +4,5 @@ extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "w
 highlighter: 
 permalink: none
 exclude: 
-url: https://davelab6.github.io/jtg
+url: https://davelab6.github.io
 title: John Taylor Gatto Archive
