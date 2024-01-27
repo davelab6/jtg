@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="preconnect" href="//fonts.googleapis.com" />
+		<link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
+		<link href="//fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text&display=swap" rel="stylesheet" type='text/css' />
+		{% if page.title == site.title %}
+			<title>{{ site.title }}</title>
+		{% else %}
+			<title>{{ site.title }}: {{ page.title }}</title>
+		{% endif %}
+		<link rel="stylesheet" type="text/css" href="/assets/stylesheets/stylesheet.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="/assets/stylesheets/print.css" media="print">
+	</head>
+	<body>
+		<nav>
+			<a href="/">Home</a>
+		</nav>
+		<h1>{{ page.title }}</h1>
+		<section>
+			{{ content }}
+		</section>
+		<footer>
+			<p>Last updated {{ site.time | date_to_long_string }}.</p>
+			<p>This book is free/libre culture, hosted on GitHub from <a href="//github.com/davelab6/jtg">github.com/davelab6/jtg</a></p>
+			<p>You are invited to <a href="//github.com/davelab6/jtg">contribute</a> to and improve <a class="editthispage" href="//github.com/davelab6/jtg/blob/gh-pages{{ page.url | replace: '.html', '.md' }}" target="_blank">this page</a>.</p>
+			<p>Content copyrights are held by the John Taylor Gatto Estate; site copyrights are <a href="//github.com/davelab6/jtg/blob/gh-pages/AUTHORS.txt">Authors</a> and the site code (not the contents) are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">CC BY-SA 3.0</a> license.
+		</footer>
+	</body>
+</html>
